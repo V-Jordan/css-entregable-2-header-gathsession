@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as var;
+
+.hero {
+    .hero_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+
+    &_text {
+        h1 {
+            font-family: var.$tilte-font;
+            font-size: 70px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 24px;
+        }
+        p {
+            width: 628px;
+            color: var.$grey;
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &_buttons {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 80px;
+    }
+
+    &_benefits {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+            border: 1px solid #464751;
+            border-radius: 16px;
+            padding: 16px;
+            background: #464751;
+            opacity: 0.5;
+            flex-shrink: 0;
+        }
+
+        span {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            max-width: 90px;
+        }
+    }
+
+    &_image {
+        position: absolute;
+        top: -5%;
+        right: -25%;
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+    
+}

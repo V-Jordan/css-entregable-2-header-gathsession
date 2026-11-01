@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as mixins;
+
+.button {
+    @include mixins.button();
+}
+
+.button-link {
+    @include mixins.button-link();
+}

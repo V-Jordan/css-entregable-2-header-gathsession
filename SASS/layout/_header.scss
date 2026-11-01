@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as var;
+
+header {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    .header_content {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            gap: 48px;
+            margin-right: 100px;
+            a {
+                text-decoration: none;
+                color: var.$grey;
+            }
+        }
+    }
+}

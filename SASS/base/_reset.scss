@@ -1,0 +1,12 @@
+@use '../abstracts/mixins' as mixins;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    @include mixins.reset-list();
+    display: flex;
+}

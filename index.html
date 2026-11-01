@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Proyecto - Header Gathsession</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Descripción corta de nuestra web para Google">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="palabra1, palabra2, palabra3">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="Nombre del autor">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- MUY IMPORTANTE: esta etiqueta hace que la página sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- Esto es para enlazar los estilos con un documento CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+     <!-- Importación de iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Carga la biblioteca jQuery para facilitar la manipulación del HTML y los eventos -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+     crossorigin="anonymous"></script>
+
+    <!-- Carga los estilos visuales del componente Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
+    <!-- Carga el código JavaScript de Select2 para crear selectores avanzados -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Carga los estilos de AOS desde node_modules; ../ sube de CSS a FRONTEND -->
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+
+    <!-- Carga las animaciones de animate.css desde node_modules -->
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+
+    <!--Carga funtes de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header_content">
+        <a href="#" class="logo">
+          <img src="./IMG/GathSession-logo.svg" alt="">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero_content">
+          <div class="hero_text">
+            <h1>Build your best community starting from here.</h1>
+            <p>Meet and communicate with the best people to run projects, events or other activities in a more effective and fun way</p>
+
+            <div class="hero_buttons">
+              <a href="#" class="button">Get Started</a>
+              <a href="#" class="button-link">Learn More →</a>
+            </div>
+
+            <ul class="hero_benefits">
+              <li><a href="#">
+                <img src="./IMG/Comments-icon.svg" alt="">
+                <span>Build Community</span>
+              </a></li>
+
+              <li><a href="#">
+                <img src="./IMG/Week-icon.svg" alt="">
+                <span>Share Events</span>
+              </a></li>
+
+              <li><a href="#">
+                <img src="./IMG/Post-icon.svg" alt="">
+                <span>Get Information</span>
+              </a></li>
+            </ul>
+          </div>
+
+
+          <div class="hero_image">
+            <img src="./IMG/persons.png" alt="Personas">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="../node_modules/aos/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    $(document).ready(function () {
+      $('#weblangs').select2();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 69px;
+  color: white;
+  background-color: #DB2A6B;
+  text-decoration: none;
+  border-radius: 16px 16px 16px 0px;
+}
+.button:hover {
+  background-color: #f592da;
+}
+
+.button-link {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hero .hero_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.hero_text h1 {
+  font-family: "Merriweather";
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 24px;
+}
+.hero_text p {
+  width: 628px;
+  color: #ABABAB;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.hero_buttons {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+.hero_benefits {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.hero_benefits a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+.hero_benefits img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #464751;
+  border-radius: 16px;
+  padding: 16px;
+  background: #464751;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+.hero_benefits span {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 90px;
+}
+.hero_image {
+  position: absolute;
+  top: -5%;
+  right: -25%;
+}
+.hero_image img {
+  width: 80%;
+  height: auto;
+}
+
+header {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+header .header_content {
+  display: flex;
+  justify-content: space-between;
+}
+header .header_content ul {
+  gap: 48px;
+  margin-right: 100px;
+}
+header .header_content ul a {
+  text-decoration: none;
+  color: #ABABAB;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1350px;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+html {
+  font-family: "Poppins";
+}
+
+body {
+  font-size: 16px;
+  background-color: #2B2D38;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
